@@ -1,0 +1,558 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    /* 解决IOS默认滑动很卡的情况 */
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    height: 100%;
+}
+
+/* 禁止缩放表单 */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input {
+    resize: none;
+    border: none;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+/* 取消链接高亮  */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* 设置HTML5元素为块 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+/* 图片自适应 */
+img {
+    width: 100%;
+    height: auto;
+    width: auto\9;
+    /* ie8 */
+    display: block;
+    -ms-interpolation-mode: bicubic;
+    /*为了照顾ie图片缩放失真*/
+}
+
+/* 初始化 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 12px/1.5 'Microsoft YaHei', '宋体', Tahoma, Arial, sans-serif;
+    color: #555;
+    background-color: #ffffff;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+strong {
+    font-weight: normal;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #969696;
+    font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+    font-family: 'Microsoft YaHei';
+}
+
+img {
+    border: none;
+}
+
+input {
+    font-family: 'Microsoft YaHei';
+}
+
+/*单行溢出*/
+.one-txt-cut {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*多行溢出 手机端使用*/
+.txt-cut {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.txt-cuts {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* 移动端点击a链接出现蓝色背景问题解决 */
+a:link,
+a:active,
+a:visited,
+a:hover {
+    background: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.db {
+    display: block !important;
+}
+
+.dn {
+    display: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    pointer-events: none;
+}
+
+button,
+input {
+    border: none;
+}
+
+input {
+    padding: 0;
+    margin: 0;
+    -webkit-user-select: text !important
+}
+
+.mui-toast-container {
+    bottom: 50%;
+    transform: translateY(50%) translateX(-50%);
+}
+
+.mui-toast-container.mui-active {
+    opacity: 1;
+}
+
+.mui-toast-message {
+    background: #eee;
+    color: #000;
+}
+
+.clearbox {
+    clear: both;
+}
+
+.heartBeat {
+    animation-duration: 700ms;
+}
+
+.luckbg {
+    background-size: 100% 100%;
+}
+
+.Progress {
+    background: url(http://www.dreamboy.top/game/images/h5/h5_querypage_background.png) no-repeat;
+}
+
+.Progressdetail {
+    background: url(http://www.dreamboy.top/game/images/h5/h5_inquirepage_background.png) no-repeat;
+}
+
+.bth_10c {
+    background: url(http://www.dreamboy.top/game/images/h5/gameroom/btn/bth_10c.png) no-repeat;
+}
+
+.bth_50c {
+    background: url(http://www.dreamboy.top/game/images/h5/gameroom/btn/bth_50c.png) no-repeat;
+}
+
+.bth_200c {
+    background: url(http://www.dreamboy.top/game/images/h5/gameroom/btn/bth_200c.png) no-repeat;
+}
+
+.bth_start {
+    background: url(http://www.dreamboy.top/game/images/h5/gameroom/btn/bth_start.png) no-repeat;
+}
+
+.bcbm .chouma_box {
+    background: url(http://www.dreamboy.top/game/images/h5/gameroom/bcbm/img_dashboard.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.xysg .Lottery_box {
+    background: url(http://www.dreamboy.top/game/images/h5/gameroom/xysg/game.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.xysg .tiger {
+    background: url(http://www.dreamboy.top/game/images/h5/gameroom/xysg/fruit_souce.png);
+    background-size: 100%;
+}
+
+.cjml .Lottery_box {
+    background: url(http://www.dreamboy.top/game/images/h5/gameroom/xysg/game.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.cjml .tiger {
+    background: url(http://www.dreamboy.top/game/images/h5/gameroom/cjml/img_m3.png);
+    background-size: 100%;
+}
+
+.csjd .tiger {
+    background: url(http://www.dreamboy.top/game/images/h5/gameroom/csjd/img_souce.png);
+    background-size: 100%;
+}
+
+.hztt .tiger {
+    background: url(http://www.dreamboy.top/game/images/h5/gameroom/hztt/img_souce.png);
+    background-size: 100%;
+}
+
+.jjdl .tiger {
+    background: url(http://www.dreamboy.top/game/images/h5/gameroom/jjdl/img_souce.png);
+    background-size: 100%;
+}
+
+.nsns .tiger {
+    background: url(http://www.dreamboy.top/game/images/h5/gameroom/nsns/img_souce.png);
+    background-size: 100%;
+}
+
+.xmdy .tiger {
+    background: url(http://www.dreamboy.top/game/images/h5/gameroom/xmdy/img_souce.png);
+    background-size: 100%;
+}
+
+.gtsp .game_bg {
+    background: url(http://www.dreamboy.top/game/images/h5/gameroom/gtsp/background.png);
+}
+
+.jssm .game_bg {
+    background: url(http://www.dreamboy.top/game/images/h5/gameroom/jssm/bg.png);
+}
+
+.tjsm .game_bg {
+    background: url(http://www.dreamboy.top/game/images/h5/gameroom/tjsm/back.png);
+}
+
+.gameroom .game_nav {
+    background: url(http://www.dreamboy.top/game/images/h5/img_nav.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.gameroomlist {
+    background: url(http://www.dreamboy.top/game/images/h5/download_page2.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* .mui-popup-inner {
+    padding: 0;
+}
+
+.mui-popup-inner,
+.mui-popup-button {
+    background: none;
+}
+
+.mui-popup {
+    width: 7rem;
+    height: 5.6rem;
+    background: url(http://www.dreamboy.top/game/images/h5/img_pop2.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.mui-popup-title {
+    width: 75%;
+    height: 1.4rem;
+    text-align: center;
+    line-height: 1.4rem;
+    font-size: 0.44rem;
+    font-weight: bolder;
+    color: #fff;
+    position: absolute;
+    top: 0.1rem;
+    left: 0;
+}
+
+.mui-popup-title+.mui-popup-text {
+    width: 100%;
+    height: 2.4rem;
+    font-size: 0.36rem;
+    line-height: 0.7rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    padding: 0 0.6rem;
+}
+
+.mui-popup-buttons {
+    width: 100%;
+    height: 1.2rem;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mui-popup-button {
+    width: 2.4rem;
+    height: 0.8rem;
+    text-align: center;
+    line-height: 0.8rem;
+    border-radius: 0.4rem;
+    font-size: 0.4rem;
+    color: #fff;
+    background: #f9b100;
+    margin: 0 0.2rem;
+} */
+
+.mui-popup {
+    border-radius: 4px;
+}
+.mui-popup-inner {
+    border-radius: 0;
+}
+.mui-popup-title {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+.mui-popup-title+.mui-popup-text {
+    font-size: 14px;
+    text-align: left;
+}
+.mui-popup-buttons {
+    background: #fff;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+.mui-popup-button {
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    color: #fff;
+    background: #59b665;
+    border: 1px solid #479950;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+.mui-popup-button-bold {
+    background: #59b665;
+}
+.mui-popup-inner:after {
+    height: 0;
+}
+
+@keyframes bigcar {
+    0% {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    100% {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+.ff2323 {
+    background: #ff2323;
+}
+
+.f5ea52 {
+    background: #f5ea52;
+}
+
+.ff8a00 {
+    background: #ff8a00;
+}
+
+.b8aff0d {
+    background: #8aff0d;
+}
+
+.b07b2ff {
+    background: #07b2ff;
+}
+
+.fe1be5 {
+    background: #fe1be5;
+}
+
+.b676b66 {
+    background: #676b66;
+}
+
+.b3612ff {
+    background: #7b5cff;
+}
+
+.dfdfdf {
+    background: #dfdfdf;
+}
+
+.b02f5b9 {
+    background: #02f5b9;
+}
+.zIndex4{
+    z-index: 4 !important;
+}
