@@ -6,16 +6,16 @@
         </div>
         <ul class="icon_right_box post_top_center flex flex_left flex_align_center">
             <li>
-                <img src="" alt="">
+                <img src="images/icon_01.png" alt="">
             </li>
             <li>
-                <img src="" alt="">
+                <img src="images/icon_02.png" alt="">
             </li>
             <li>
-                <img src="" alt="">
+                <img src="images/icon_03.png" alt="">
             </li>
             <li>
-                <img src="" alt="">
+                <img src="images/icon_04.png" alt="">
             </li>
         </ul>
     </div>
@@ -35,6 +35,7 @@ export default {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
     .logo_box {
         left: 17px;
         .logo_icon {
@@ -55,6 +56,8 @@ export default {
         li {
             width: 37px;
             height: 37px;
+            margin-right: 22px;
+            cursor: pointer;
             img {
                 width: 100%;
                 height: 100%;

@@ -35,10 +35,13 @@ export default {
   position: relative;
 
   .app_content {
-    width: 1811px;
     position: absolute;
     top: 69px;
     left: 86px;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    overflow-y: scroll;
     .top_nav_list {
       width: 100%;
       height: 64px;
@@ -128,9 +131,9 @@ export default {
       margin-top: 14px;
     }
     .page_content {
-      width: 100%;
-      height: 901px;
-      border-radius: 7px;
+      width: 1811px;
+      min-height: 774px;
+      border-radius: 8px;
       background: #fff;
       padding: 22px;
       box-sizing: border-box;
