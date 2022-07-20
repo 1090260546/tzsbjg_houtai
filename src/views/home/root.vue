@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <app_header></app_header>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ export default {
 .home {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 </style>
 

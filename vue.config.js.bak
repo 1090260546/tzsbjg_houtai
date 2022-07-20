@@ -30,7 +30,7 @@ module.exports = {
   productionSourceMap: false,
   // webpack-dev-server 相关配置
   devServer: {
-    port: 80,
+    port: 8000,
     hotOnly: true,
     proxy: {
       '/api': {

@@ -1,12 +1,54 @@
 import Vue from "vue";
 import Router from "vue-router";
 import home from "./home";
-import mine from "./mine";
 
 Vue.use(Router);
 const routes = [
   home,
-  mine,
+  {
+    path: '/repair_history',
+    component: () => import('../views/home/repair_history'),
+  },
+  {
+    path: '/manage_list',
+    component: () => import('../views/home/manage_list'),
+  },
+  {
+    path: '/work_order',
+    component: () => import('../views/home/work_order'),
+  },
+  {
+    path: '/type_list',
+    component: () => import('../views/home/type_list'),
+  },
+  {
+    path: '/fault_repair',
+    component: () => import('../views/home/fault_repair'),
+  },
+  {
+    path: '/check_list',
+    component: () => import('../views/home/check_list'),
+  },
+  {
+    path: '/check_rule',
+    component: () => import('../views/home/check_rule'),
+  },
+  {
+    path: '/check_history',
+    component: () => import('../views/home/check_history'),
+  },
+  {
+    path: '/check_project',
+    component: () => import('../views/home/check_project'),
+  },
+  {
+    path: '/maintenance_rules',
+    component: () => import('../views/home/maintenance_rules'),
+  },
+  {
+    path: '/maintenance_list',
+    component: () => import('../views/home/maintenance_list'),
+  },
   {
     path: '**',
     redirect: '/home'
