@@ -95,7 +95,7 @@ export default {
         }
       }
       .seach_right_item {
-        right: 56px;
+        right: 0;
         input {
           width: 500px;
           height: 48px;

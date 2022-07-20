@@ -18,7 +18,7 @@
           "
         >
           <button class="export_btn">导出</button>
-          <p>已选择0项</p>
+          <p>已选择{{multipleSelection.length}}项</p>
         </div>
         <div
           class="
@@ -193,6 +193,7 @@ export default {
       }
     },
     handleSelectionChange(val) {
+      console.log(val);
       this.multipleSelection = val;
     },
   },
