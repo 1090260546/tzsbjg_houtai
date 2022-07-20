@@ -122,6 +122,11 @@ export default {
         }
       }
     }
+    .el-pagination {
+      display: flex;
+      justify-content: right;
+      margin-top: 14px;
+    }
     .page_content {
       width: 100%;
       height: 901px;

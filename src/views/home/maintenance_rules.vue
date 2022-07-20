@@ -151,10 +151,6 @@ export default {
 .maintenance_rulues {
   width: 100%;
   height: 100%;
-  .el-pagination {
-    display: flex;
-    justify-content: right;
-    margin-top: 14px;
-  }
+  
 }
 </style>
