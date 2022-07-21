@@ -289,3 +289,7 @@ input {
 .cursor {
     cursor: pointer;
 }
+
+.el-input__inner {
+    border: 1px solid #ebebeb !important;
+}

@@ -50,6 +50,22 @@ const routes = [
     component: () => import('../views/home/maintenance_list'),
   },
   {
+    path: '/new_equipment',
+    component: () => import('../views/home/new_equipment'),
+  },
+  {
+    path: '/add_accessories',
+    component: () => import('../views/home/add_accessories'),
+  },
+  {
+    path: '/equipment_repair',
+    component: () => import('../views/home/equipment_repair'),
+  },
+  {
+    path: '/add_rules',
+    component: () => import('../views/home/add_rules'),
+  },
+  {
     path: '**',
     redirect: '/home'
   }

@@ -138,6 +138,145 @@ export default {
       padding: 22px;
       box-sizing: border-box;
     }
+
+    .from_list {
+      width: 1100px;
+      // margin-left: 50%;
+      // transform: translateX(-50%);
+      .title_div {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        .shu_xian {
+          width: 10px;
+          height: 22px;
+          background: #02b980;
+          margin-right: 10px;
+        }
+        p {
+          height: 22px;
+          line-height: 22px;
+          font-size: 16px;
+          color: #000;
+          font-weight: bold;
+        }
+      }
+      .input_list {
+        width: 100%;
+
+        li {
+          height: 40px;
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          margin-bottom: 16px;
+          p {
+            width: 70px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            color: #333;
+            text-align: right;
+            margin-right: 6px;
+          }
+          input {
+            width: 400px;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid #ebebeb;
+            font-size: 14px;
+            color: #333;
+            padding-left: 10px;
+            box-sizing: border-box;
+            border-radius: 4px;
+          }
+          .el-date-editor .el-input__inner {
+            padding-left: 26px;
+          }
+          .el-select,
+          .el-cascader,
+          .el-date-editor {
+            width: 400px;
+            height: 40px;
+          }
+        }
+      }
+      .text_box {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        margin-bottom: 16px;
+        p {
+          width: 70px;
+          height: 40px;
+          line-height: 40px;
+          font-size: 14px;
+          color: #333;
+          text-align: right;
+          margin-right: 6px;
+        }
+        textarea {
+          padding: 10px;
+          font-size: 14px;
+          color: #333;
+        }
+      }
+      .updata_img {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        p {
+          width: 70px;
+          height: 40px;
+          line-height: 40px;
+          font-size: 14px;
+          color: #333;
+          text-align: right;
+          margin-right: 6px;
+        }
+      }
+      .from_btn,.from_btn_left {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        button {
+          width: 80px;
+          height: 30px;
+          text-align: center;
+          line-height: 30px;
+          font-size: 14px;
+          color: #20b47d;
+          border: 1px solid #20b47d;
+          border-radius: 6px;
+        }
+        .active {
+          border: none;
+          background: #02b980;
+          color: #fff;
+        }
+        .bg_f59a23 {
+          border: none;
+          background: #f59a23;
+          color: #fff;
+        }
+      }
+
+      .from_btn {
+        justify-content: right;
+        button {
+          margin-left: 20px;
+        }
+      }
+      .from_btn_left {
+        justify-content: left;
+        button {
+          margin-right: 20px;
+        }
+      }
+    }
   }
 
   .post_relative {
@@ -166,6 +305,10 @@ export default {
   .flex {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .flew_1 {
+    flex: 1;
   }
 
   .flex_left {
