@@ -1,4 +1,5 @@
 <template>
+  <!-- 新增设备 -->
   <div class="new_equipment">
     <ul class="top_nav_list flex flex_just_left">
       <li>主页</li>

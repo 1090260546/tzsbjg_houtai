@@ -1,4 +1,5 @@
 <template>
+  <!-- 新增配件 -->
   <div class="add_accessories">
     <ul class="top_nav_list flex flex_just_left">
       <li>主页</li>

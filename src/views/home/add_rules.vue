@@ -1,4 +1,5 @@
 <template>
+  <!-- 新增规则 -->
   <div class="add_accessories">
     <ul class="top_nav_list flex flex_just_left">
       <li>主页</li>
@@ -20,7 +21,12 @@
           </li>
           <li>
             <p>执行人:</p>
-            <input class="flew_1" disabled="disabled" type="text" placeholder="请选择" />
+            <input
+              class="flew_1"
+              disabled="disabled"
+              type="text"
+              placeholder="请选择"
+            />
           </li>
           <li>
             <p>设备名称:</p>
@@ -72,15 +78,10 @@
           </li>
           <li>
             <p>循环方式:</p>
-            <el-select v-model="value" placeholder="请选择">
-              <el-option
-                v-for="item in options"
-                :key="item.value"
-                :label="item.label"
-                :value="item.value"
-              >
-              </el-option>
-            </el-select>
+            <el-radio-group v-model="radio">
+              <el-radio :label="3">单次</el-radio>
+              <el-radio :label="6">多次</el-radio>
+            </el-radio-group>
           </li>
           <li>
             <p>循环周期:</p>
@@ -191,6 +192,7 @@ export default {
       tableData: [],
       multipleSelection: [],
       currentPage1: 5,
+      radio: 3
     };
   },
   methods: {
