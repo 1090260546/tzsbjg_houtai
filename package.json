@@ -1,7 +1,7 @@
 {
   "name": "ruoyi",
   "version": "3.8.2",
-  "description": "中赫慧能管理系统",
+  "description": "特种设备智慧监管后台",
   "author": "中赫慧能",
   "license": "MIT",
   "scripts": {

@@ -28,6 +28,11 @@ export default {
   data() {
     return {};
   },
+  methods: {
+    tab_page(path) {
+      this.$router.push(path);
+    }
+  }
 };
 </script>
 
